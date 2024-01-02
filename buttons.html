@@ -1,5 +1,5 @@
 <style>
-  button{  /* CSS selector: tells the computer which elements we r modifying, in this case all buttons*/
+  .subscribe-button{  /* CSS selector: tells the computer which elements we r modifying, in this case all buttons*/
     background-color: rgb(200, 0, 0); /*CSS property : CSS Value*/
     color: white;
     border:none;
@@ -8,6 +8,34 @@
     border-radius: 2px; /*to make curved corners*/
     /* when we move towards the button, the pointer changes form an arrow to hand*/
     cursor: pointer;
+    margin-right: 8px;
+  }
+
+  .join-button{
+    background-color: white;
+    border-color: rgb(41, 118, 210);
+    border-style: solid;
+    border-width: 1px;
+    color:  rgb(41, 118, 210);;
+    height: 36px;
+    width: 62px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    /*to add space between the two buttons we use "margin right" for Subscribe*/
+
+  }
+
+  .tweet-button{
+    background-color: rgba(14, 153, 184, 0.77);
+    border: none;
+    color:white;
+    height: 36px;
+    width: 72px;
+    cursor: pointer;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
   }
 </style>     
 
@@ -15,9 +43,34 @@
   we write css code to modufy appearance of other elements
 -->
 
-<button>SUBSCRIBE</button>
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
 
 <!--
   to change its appearance w ewrite CSS
   we create a new element called "style"
 -->
+
+<button class="join-button">
+  JOIN
+</button>
+
+
+
+<!--
+  the join button created has same properties as "style" of SUBSCRIBE button
+  we will use attributes to change this
+  we addes a class
+  when we target the button "SUBSCRIBE" in CSS we use .subscribe-button instead of element
+-->
+
+
+<!--
+  create an element with HTML
+  style with CSS
+-->
+
+<button class="tweet-button">
+  Tweet
+</button>
